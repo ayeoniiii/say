@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <style>
+        body {
+            background-color: gray;
+            width: 100%;
+            overflow-x: hidden;
+        }
+
+        .dimm {
+            display: none;
+            position: fixed;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            background-color: rgba(0, 0, 0, 0.7);
+            z-index: 99;
+        }
+
+        .container {
+            max-width: 1032px;
+            width: 100%;
+            margin: 50px auto;
+            padding: 0 16px;
+            outline: 1px solid blue;
+        }
+
+        .btn-close {
+            display: none;
+        }
+
+        .container ul {
+            outline: 1px solid red;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .container li {
+            background-color: pink;
+            width: calc((100% - 30px) / 4);
+            flex-shrink: 0;
+            /* flex-grow, flex-shrink, flex-basis */
+        }
+
+        li:nth-child(3n - 1) {
+            /* 2, 5, */
+            background-color: teal;
+        }
+
+        .btn-ham {
+            width: 40px;
+            height: 40px;
+            background-color: #fff;
+            display: none;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            right: 20px;
+            top: 20px;
+        }
+
+        .gnb-container {
+            background-color: white;
+            z-index: 100;
+            transition: right 0.5s;
+        }
+
+        .gnb-container ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            height: 70px;
+        }
+    </style>
+    <link rel="stylesheet" href="./css/0826_02_respons.css">
+</head>
+
+<body>
+    <h1>Responsible web site</h1>
+    <div class="dimm"></div>
+    <nav class="gnb-container">
+        <ul>
+            <li>MENU 1</li>
+            <li>MENU 2</li>
+            <li>MENU 3</li>
+        </ul>
+        <button type="button" class="btn-close">
+            메뉴닫기
+        </button>
+    </nav>
+    <button type="button" class="btn-ham">
+        <img src="./images/icons/vento_bk.svg" alt="메뉴열기">
+    </button>
+    <div class="container">
+        <ul>
+            <li>A</li>
+            <li>B</li>
+            <li>C</li>
+            <li>D</li>
+        </ul>
+    </div>
+    <script>
+        const gnb = document.querySelector('.gnb-container')
+        const dimm = document.querySelector('.dimm')
+        const open = document.querySelector('.btn-ham')
+        const close = document.querySelector('.btn-close')
+
+        open.addEventListener('click', () => {
+            dimm.style.display = 'block';
+            gnb.style.right = 0;
+        })
+
+        close.addEventListener('click', () => {
+            dimm.style.display = 'none';
+            gnb.style.right = '-310px';
+        })
+    </script>
+</body>
+
+</html>

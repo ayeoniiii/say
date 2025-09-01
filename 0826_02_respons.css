@@ -1,0 +1,101 @@
+@charset "utf-8";
+/*
+Mobile first
+@medai all and (min-width:375px) { 375px 이상일때}
+*/
+@media all and (max-width: 1200px) {
+  /* 1200px 이하에서는... */
+  body {
+    background-color: tomato;
+  }
+}
+
+@media all and (max-width: 1024px) {
+  body {
+    background-color: olive;
+  }
+
+  .container li {
+    width: calc((100% - 20px) / 3);
+  }
+
+  .container li:last-child {
+    width: 90%;
+  }
+}
+
+/* mobile */
+@media all and (max-width: 764px) {
+  body {
+    background-color: #8982c7;
+  }
+
+  .btn-ham {
+    display: flex;
+  }
+
+  .btn-close {
+    display: inline-block;
+  }
+
+  .gnb-container {
+    position: fixed;
+    right: -310px;
+    top: 0;
+    height: 100vh;
+    width: 300px;
+  }
+
+  .gnb-container ul {
+    display: block;
+    height: auto;
+    padding-top: 100px;
+  }
+}
+
+@media all and (max-width: 480px) {
+  body {
+    background-color: gold;
+  }
+
+  .container ul {
+    flex-direction: column;
+  }
+
+  .container li {
+    width: 100%;
+  }
+
+  .container li:last-child {
+    width: 100%;
+  }
+}
+
+/* 
+        
+        div ul li {} 0 0 0 3
+        .container ul li {} 0 0 1 2
+        div.container ul li {} 0 0 1 3
+        ul li {} 0 0 0 2
+        li {} 0 0 0 1
+        div div div .... 0 0 0 10
+
+        tag : 0 0 0 1;
+        class : 0 0 1 0;
+        id : 0 1 0 0 ;
+        inline : 1 0 0 0; 
+        
+        */
+/* tag < class < id < inline style */
+
+@media all and (max-width: 375px) {
+  body {
+    background-color: dodgerblue;
+  }
+
+  .container li:last-child {
+    display: none;
+  }
+}
+
+/* break-point : 764, 480, 375 */

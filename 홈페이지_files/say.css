@@ -1,0 +1,30 @@
+@charset "utf-8";
+
+body {
+    background-color: #f2ebeb;
+    margin: 20px auto;
+}
+
+.text-container {
+    color: #26101A;
+        margin: 20px auto;
+}
+
+summary {
+    list-style: none;
+}
+
+.intro {
+    width: 100%;
+    line-height: 1.6;
+    font-size: 14px;
+    display: flex;
+    text-decoration: underline;
+    text-underline-position:under;
+}
+
+.intro img {
+    width: 55px;
+    height: 30px;
+    max-width: 20%;
+}

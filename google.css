@@ -1,0 +1,174 @@
+@charset "utf-8";
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  /* background-image: url("../images/full_bg.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover; */
+  /* 축약형 */
+  color: #fff;
+  font-family: sans-serif;
+  background: url("../images/full_bg.jpg") no-repeat fixed center center/cover;
+}
+
+a,
+button {
+  transition: 0.4s;
+}
+.gnb .list {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 1.5rem;
+  font-size: 12px;
+}
+
+.gnb a:hover {
+  text-decoration: underline;
+}
+
+.gnb .btn_lab,
+.gnb .btn_menu,
+.gnb .btn_mypage {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: no-repeat center center/24px auto;
+}
+
+.gnb .btn_lab {
+  background-image: url("../images/icons/lab_wt.svg");
+  background-size: 20px auto;
+}
+
+.gnb .btn_menu {
+  background-image: url("../images/icons/vento_wt.svg");
+}
+
+.gnb .btn_mypage {
+  background-color: #fff;
+  background-image: url("../images/irangi_7.png");
+}
+
+.gnb .btn_lab:hover,
+.gnb .btn_menu:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.gnb .btn_mypage:hover {
+  box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.3);
+}
+
+.main-container {
+  width: 100%;
+  max-width: 746px;
+  margin: 3rem auto 0;
+}
+
+.main-container h1 {
+  font-size: 100px;
+  text-align: center;
+  font-weight: 600;
+}
+
+/* 검색 */
+.search-container {
+  border-radius: 30px;
+  background: #fff url("../images/icons/search_gr.svg") no-repeat 8px
+    center/24px auto;
+  padding: 0 20px 0 36px;
+  display: flex;
+  align-items: center;
+  margin: 2rem 0 3rem;
+}
+.search-container form {
+  flex-grow: 1; /* figma의 fill-container와 동일 */
+}
+.search-container .input {
+  width: 100%;
+  height: 48px;
+  color: #000;
+  outline: 1px solid transparent;
+}
+.search-container .other-search {
+  display: flex;
+  gap: 10px;
+}
+.search-container .other-search button {
+  width: 24px;
+  height: 24px;
+  background: no-repeat center center/21px auto;
+}
+
+.search-container .other-search .voice {
+  background-image: url("../images/icons/google_voice.svg");
+}
+.search-container .other-search .lens {
+  background-image: url("../images/icons/google_lens.svg");
+}
+
+/* 자주방문하는 사이트 */
+.latest-site-list {
+  display: flex;
+  flex-wrap: wrap;
+  /* width: 100%; */
+}
+
+.latest-site-list li {
+  width: 112px;
+  position: relative;
+}
+
+.latest-site-list a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 112px;
+  gap: 0.8rem;
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 8px;
+  padding: 1rem;
+  font-size: 13px;
+  text-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.latest-site-list li:hover a {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.latest-site-list li:hover .btn_more {
+  display: block;
+}
+
+.latest-site-list .favicon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: #e8e8e8;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.latest-site-list .btn_more {
+  width: 24px;
+  height: 24px;
+  background: rgba(0, 0, 0, 0) url("../images/icons/meatball_wt.svg") no-repeat
+    center center/20px auto;
+  position: absolute;
+  right: 2px;
+  top: 4px;
+  border-radius: 50%;
+  display: none;
+}
+
+.latest-site-list .btn_more:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}

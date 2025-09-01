@@ -1,0 +1,344 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'PfStardust30S';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2506-1@1.0/PFStardustS.woff2') format('woff2');
+    font-weight: 400;
+    font-display: swap;
+}
+
+
+
+@font-face {
+font-family: 'HealthsetGothic';
+src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.0/HealthsetGothicLight.woff') format('woff');
+font-weight: normal;
+font-display: swap;
+}
+
+
+html {
+    cursor: url('../asset/purple.cur') 12 12, auto;
+    scroll-behavior: smooth;
+}
+
+
+a, button {
+cursor: pointer;
+}
+
+
+body {
+background-color: #fdfff9;
+font-family:'PfStardust30S';
+line-height: 1.7;
+word-break: keep-all;
+overflow-x: hidden;
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit; 
+    cursor: pointer;
+}
+
+
+section {
+    max-width: 900px;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.h3 {
+font-size: 3rem;
+}
+
+
+.text-container {
+color: #23181d;
+display: flex;
+justify-content: center; 
+align-items: center;
+width: 100%;
+text-align: left;
+}
+
+.intro {
+width: 100%;
+max-width: 700px;
+padding: 40px;
+box-sizing: border-box;
+width: 100%;
+line-height: 1.5;
+font-size: 14px;
+
+display: flex;
+text-underline-position: under;
+flex-direction: column;
+align-items: center;
+
+text-align: center;
+margin: 50px auto;
+
+background-color: #fdfdfa; /* 살짝 빛바랜 종이 색상 */
+background-image: linear-gradient(#ddd 1px, transparent 1px); /* 회색 줄무늬 */
+background-size: 100% 2.15em; /* 줄 간격 설정 */
+border-radius: 8px; /* 부드러운 모서리 */
+box-shadow: 0 4px 15px rgba(0,0,0,0.08); /* 부드러운 그림자 */
+border: 1px solid #eee;
+
+}
+
+
+
+h1{
+
+font-family: 'PfStardust30S', cursive;
+font-size: 2rem; /* 제목 크기 */
+font-weight: 700; /* 굵은 글씨체 */
+color: #444;
+text-align: left;
+margin-bottom: 2em; /* 제목과 본문 사이 간격 */
+padding-bottom: 0.5em;
+}
+
+
+.intro p {
+
+line-height: 2.3em;
+font-family: 'PfStardust30S', cursive;
+font-size: 1.25rem; 
+line-height: 2.2em; 
+text-align: justify;
+}
+
+
+.text-block1 {
+padding: 20px;
+display: block;
+width: 100%;
+margin: 30px auto;
+border-radius: 8px;
+background: linear-gradient(135deg, rgba(240, 239, 233, 0.6), rgba(233, 228, 195, 0.6));
+box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.15);
+text-align: left;
+text-decoration: none;
+z-index: 1;
+
+
+}
+
+
+.text-block2 {
+
+display: block;
+width: 100%;
+margin: 30px auto;
+border-radius: 8px;
+background: linear-gradient(135deg, rgba(240, 239, 233, 0.6), rgba(233, 228, 195, 0.6));
+box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.15);
+text-align: left;
+text-decoration: none;
+padding: 20px;
+z-index: 1;
+}
+
+
+.text-block3 {
+
+display: block;
+width: 100%;
+margin: 30px auto;
+border-radius: 8px;
+background: linear-gradient(135deg, rgba(240, 239, 233, 0.6), rgba(233, 228, 195, 0.6));
+box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.15);
+text-align: left;
+text-decoration: none;
+z-index: 1;
+padding: 20px;
+}
+
+@media (max-width: 768px) {
+.project-item {
+flex-direction: column;
+}
+}
+
+
+.project-container .text-block1 .project-title {
+font-weight: 700;
+text-decoration: none;
+}
+
+
+section .project-container {
+
+font-family: 'PfStardust30S', sans-serif;
+display: flex;
+align-items: center;
+justify-content: center;
+flex:auto;
+text-decoration: none;
+
+}
+
+.top-row {
+display: flex;
+justify-content: center;
+gap: 20px;
+width: 100%; 
+}
+
+
+.profile-box {
+font-family: 'PfStardust30S', sans-serif;
+background: #fff;
+padding: 30px;
+border-radius: 8px;
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+width: 100%;
+box-sizing: border-box;
+}
+
+
+
+.profile-box h2 {
+font-family: var(--font-display);
+font-size: 1.8rem;
+margin-bottom: 1rem;
+color: var(--primary-color-dark);
+}
+
+
+
+.profile-box.interests {
+margin: 20px 0 20px 0 ;
+}
+
+
+project-card {
+    width: 100%; /* 너비를 꽉 채우도록 설정 */
+    max-width: 700px; /* 카드의 최대 너비를 지정하여 너무 커지지 않게 함 */
+    box-sizing: border-box;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+
+/* === 7. 푸터 === */
+
+.minimal-footer {
+    width: 100%;
+    padding: 40px;
+    box-sizing: border-box;
+    background-color: transparent;
+    color: #b0a8a8;
+    text-align: center;
+    text-decoration: none;
+}
+
+.footer-handle { font-size: 1rem; font-weight: bold; margin-bottom: 1rem; }
+.footer-info span { margin: 0 10px; font-size: 0.8rem; }
+.footer-credit { font-size: 0.8rem; margin-top: 1rem; }
+
+
+.btn-goto-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 70px;
+    height: 70px;
+    z-index: 999;
+    background-color: rgb(226, 51, 159);
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    background-image: url('../images/음표-pink.png');
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center;
+    opacity: 0.7;
+    transition: opacity 0.3s;
+}
+
+.btn-goto-top:hover { opacity: 1; }
+
+
+.intro {
+    /* ... 기존 스타일 ... */
+    position: relative; /* ::before 가상 요소의 기준점 */
+    background-color: #fdfdfa;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    border: 1px solid #eee;
+    transition: transform 0.4s ease; /* 부드러운 전환 효과 */
+    transform: rotate(1.5deg);
+}
+
+/* 노트의 접힌 뒷면을 만들기 위한 가상 요소 */
+.intro::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-width: 0 80px 80px 0; /* 접히는 삼각형 크기 */
+    border-radius: 4px;
+    border-style: solid;
+    border-color: #fafaf5 #f0ede3; /* 배경색과 종이 안쪽 색 */
+    box-shadow: -1px 1px 5px rgba(0,0,0,0.1);
+    transform: rotate(0deg);
+
+    /* 초기에는 투명하게 숨김 */
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+/* 노트에 마우스를 올렸을 때 */
+.intro:hover {
+    transform: translateY(-5px); rotate:(0deg) scale(1.05); /* 살짝 위로 뜨는 효과 */
+}
+
+.intro:hover::before {
+    opacity: 1; /* 접힌 뒷면을 보이게 함 */
+}
+
+/* === 10. 클릭 애니메이션 효과 === */
+
+/* === 10. 클릭 애니메이션 효과 === */
+
+#confetti-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 9999;
+    overflow: hidden; /* 화면 밖으로 나가는 원들을 숨김 */
+}
+
+.confetti {
+    position: absolute;
+    border-radius: 50%;
+    /* opacity는 JS에서 설정하므로 여기서 제거 */
+    animation: fall-and-fade linear forwards;
+}
+
+@keyframes fall-and-fade {
+    0% {
+        top: -10%; /* 화면 위쪽 10% 밖에서 시작 */
+        opacity: 0; /* 처음에는 투명하게 시작 */
+        transform: scale(0.5) rotate(0deg); /* 작은 크기로 시작 */
+    }
+    20% {
+        opacity: 1; /* 빠르게 불투명해짐 */
+        transform: scale(1) rotate(72deg); /* 원래 크기로 커지면서 회전 */
+    }
+    100% {
+        top: 110%; /* 화면 아래쪽 10% 밖으로 이동 */
+        opacity: 0; /* 완전히 떨어지면서 서서히 사라짐 */
+        transform: scale(0.5) rotate(360deg); /* 마지막엔 다시 작아지면서 회전 완료 */
+    }
+}
