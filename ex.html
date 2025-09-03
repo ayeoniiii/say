@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello world!</h1>
+
+    <ul>
+        <li>good day</li>
+    </ul>
+
+    <script>
+        // h1 요소를 클릭했을 때 콘솔에 내용을 출력하는 함수
+        document.addEventListener('DOMContentLoaded', function() {
+            const h1Element = document.querySelector('h1');
+            
+            h1Element.addEventListener('click', function() {
+                console.log('h1 요소가 클릭되었습니다!');
+                console.log('클릭된 요소의 텍스트:', this.textContent);
+                console.log('클릭된 요소의 태그명:', this.tagName);
+            });
+        });
+    </script>
+</body>
+</html>
