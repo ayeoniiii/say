@@ -34,6 +34,7 @@ font-family:'PfStardust30S';
 line-height: 1.7;
 word-break: keep-all;
 overflow-x: hidden;
+/* font-family:'Kablammo', 'East Sea Dokdo', sans-serif; */
 }
 
 
@@ -125,8 +126,6 @@ box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.15);
 text-align: left;
 text-decoration: none;
 z-index: 1;
-
-
 }
 
 
@@ -183,12 +182,14 @@ text-decoration: none;
 
 }
 
+
 .top-row {
 display: flex;
 justify-content: center;
 gap: 20px;
 width: 100%; 
 }
+
 
 
 .profile-box {
